@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List app By Asim Das</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="css/assets/icons/list-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerbox">
+            <div class="logo">
+                <h1>To-DO List</h1>
+                <p>By Asim Das</p>
+            </div>
+            <div class="togglecontainer">
+                <img src="css/assets/icons/sun-white.svg" alt="">
+                <label class="switch">
+                    <input type="checkbox" id="mode" checked>
+                    <div class="slider"></div>
+                </label>
+            </div>
+        </div>
+        <div class="addbox">
+            <input type="text" placeholder="Add things to do ....">
+            <button>
+                <img src="css/assets/icons/cross-circle-white.svg" alt="+">
+            </button>
+        </div>
+        <div id="listbox">
+            
+        </div>
+        <div class="optionbox">
+            <button id="done">
+                <img src="css/assets/icons/check-double-purple-light.svg" alt="Done">
+                All Done
+            </button>
+            <button id="clear">
+                <img src="css/assets/icons/cross-purple-light.svg" alt="Clear">
+                Clear All
+            </button>
+        </div>
+        <div class="linksbox">
+            <span class="github">
+                Code at <a href="#"> GitHub <i class="fa-brands fa-github"></i></a>
+            </span>
+            <span class="socialicon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </span>
+        </div>
+        <h2 class="name">Made By Asim Das</h2>
+    </div>
+</body>
+
+</html>
