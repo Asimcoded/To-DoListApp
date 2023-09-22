@@ -33,11 +33,12 @@ const listBox = document.getElementById('listbox');
 const doneButton = document.getElementById('done');
 const clearButton = document.getElementById('clear')
 
-addButton.addEventListener("click", () => {
+function addlist(){
     if (inputBox.value == '') {
         document.querySelector('.addbox').style.border = "2px solid red";
     }
     else {
+        document.querySelector('.addbox').style.border = "0";
         let list = document.createElement('div');
         list.setAttribute('class', 'list');
         let listContent = `
@@ -62,7 +63,14 @@ addButton.addEventListener("click", () => {
     }
     inputBox.value = '';
     saveData();
+}
+inputBox.addEventListener("keypress",(e)=>{
+    if(e.key === "Enter"){
+        e.preventDefault()
+        addlist();
+    }
 })
+addButton.addEventListener("click",addlist)
 
 listBox.addEventListener('click', function (e) {
     if (e.target.tagName === "INPUT") {

@@ -116,6 +116,9 @@ input:checked + .slider:before{
     color: var(--secondary-color);
     font-size: 20px;
     text-indent: 20px;
+    text-wrap: wrap;
+    padding-right: 30
+    px;
     width: 100%;
     border-radius: 10px 0 0 10px;
     border: 0;
@@ -251,8 +254,3 @@ input:checked + .slider:before{
     font-weight: normal;
 }
 
-@media (max-width:569px) {
-    body{
-        background-image: linear-gradient(to bottom, var(--gradient-color-light-one),var(--gradient-color-light-two));
-    }
-}
